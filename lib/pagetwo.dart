@@ -47,8 +47,8 @@ class PageTwo extends StatelessWidget {
               )),
             );
           } else {
-            return Container(
-                child: Column(
+            return Scaffold(
+                body: Column(
               children: [
                 Container(
                   child: Text('Usuário não encontrado!'),
