@@ -1,6 +1,6 @@
 # Procurar usuários no Github
 
-Aplicativo criado com intuito de melhorar meus conhecimentos em Dart, melhorar meu conhecimento em Flutter.
+Aplicativo criado com intuito de melhorar meus conhecimentos em Dart e Flutter.
 
 ## Como usar:
 
