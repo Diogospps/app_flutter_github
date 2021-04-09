@@ -1,15 +1,14 @@
-# app2
+# Procurar usuários no Github
 
-A new Flutter project.
+Aplicativo criado com intuito de melhorar meus conhecimentos em Dart, melhorar meu conhecimento em Flutter.
 
-## Getting Started
+## Como usar:
 
-This project is a starting point for a Flutter application.
+A utilização é simples, digite o nome do usuário que deseja encontrar na caixa de texto e clicar no botão "Pesquisar". Após isso, você será redirecionado à pagina de exibição dos dados desse perfil no github. Caso o usuário não exista, ou foi digitado errado, o aplicativo redirecionará para a pagina de "usuário não encontrado", faça outra pesquisa.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## Links 
+- [Curriculo](https://diogospps.github.io/)
+- [Linkedin](https://www.linkedin.com/in/diogospps/)
 
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
