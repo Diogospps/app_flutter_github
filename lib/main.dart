@@ -13,10 +13,12 @@ class MyApp extends StatelessWidget {
     final appTitle = 'Procure um usuario no GitHub';
 
     return MaterialApp(
+      theme: ThemeData(primaryColor: Colors.black),
       debugShowCheckedModeBanner: false,
       title: appTitle,
       home: Scaffold(
         appBar: AppBar(
+          backgroundColor: Colors.black,
           title: Text(appTitle),
           centerTitle: true,
         ),
@@ -104,6 +106,7 @@ class MyCustomFormState extends State<MyCustomForm> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           TextFormField(
+            cursorColor: Colors.black,
             decoration:
                 InputDecoration(labelText: 'Digite o usuário desejado:'),
             validator: (value) {
@@ -117,6 +120,7 @@ class MyCustomFormState extends State<MyCustomForm> {
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 16.0),
             child: ElevatedButton(
+              style: ElevatedButton.styleFrom(primary: Colors.black),
               onPressed: () {
                 // Validate returns true if the form is valid, or false otherwise.
                 if (_formKey.currentState.validate()) {
@@ -125,7 +129,7 @@ class MyCustomFormState extends State<MyCustomForm> {
                       .showSnackBar(SnackBar(content: Text('Carregando...')));
                 }
               },
-              child: Text('Submit'),
+              child: Text('Pesquisar'),
             ),
           ),
         ],

@@ -11,6 +11,7 @@ class PageTwo extends StatelessWidget {
           if (snapshot.hasData) {
             return Scaffold(
               appBar: AppBar(
+                backgroundColor: Colors.black,
                 centerTitle: true,
                 title: Text(snapshot.data.login),
               ),
@@ -27,7 +28,7 @@ class PageTwo extends StatelessWidget {
                     child: Text('Usuário: ' + snapshot.data.login),
                   ),
                   Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       Container(
                         child: Text('Seguidores: ' +
@@ -48,20 +49,32 @@ class PageTwo extends StatelessWidget {
             );
           } else {
             return Scaffold(
-                body: Column(
-              children: [
-                Container(
-                  child: Text('Usuário não encontrado!'),
+                appBar: AppBar(
+                  centerTitle: true,
+                  title: Text('Usuário não encontrado!'),
+                  backgroundColor: Colors.black,
                 ),
-                Container(
-                    child: ElevatedButton(
-                  onPressed: () {
-                    Navigator.pop(context);
-                  },
-                  child: Text('Faça outra pesquisa!'),
-                )),
-              ],
-            ));
+                body: Center(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Container(
+                        child: Text('Usuário não encontrado!'),
+                      ),
+                      Container(
+                          padding: const EdgeInsets.symmetric(vertical: 16.0),
+                          child: ElevatedButton(
+                            style:
+                                ElevatedButton.styleFrom(primary: Colors.black),
+                            onPressed: () {
+                              Navigator.pop(context);
+                            },
+                            child: Text('Faça outra pesquisa!'),
+                          )),
+                    ],
+                  ),
+                ));
           }
         },
       ),
